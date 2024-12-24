@@ -1,57 +1,64 @@
-# MKE-M16 Blynk Gate Wifi IoT Module
+# MKE-M20 TTL to RS485 Module
 
 ## Giới thiệu
 
-Với các mạch vi điều khiển không có chức năng Wifi nhưng lại quá quen thuộc với bạn như Arduino Uno, Arduino Mega 2560, Microbit,...thì việc xây dựng các ứng dụng IoT trở nên thật khó khăn. MKE-M16 Blynk Gate Wifi IoT Module giúp bạn giải quyết vấn đề này chỉ với vài bước thiết lập đơn giản, bạn đã có thể kết nối Wifi và xây dựng các ứng dụng IoT trên nền tảng Blynk đã quá nổi tiếng và quen thuộc hiện nay.
+Mạch chuyển giao tiếp MKE-M20 TTL to RS485 được thiết kế để có thể giúp bạn chuyển giao tiếp từ chuẩn giao tiếp UART TTL (Vi điều khiển, máy tính nhúng,...) sang chuẩn giao tiếp RS485 và ngược lại.
 
-MKE-M16 Blynk Gate Wifi IoT Module được MakerLab.vn nghiên cứu và phát triển giúp các bạn DIY các thiết bị IoT nhanh và dễ dàng trên nền tảng Blynk, module có hai cách sử dụng là hoạt động độc lập bằng chính các chân GPIO có trên mạch hoặc hết hợp với các mạch vi điều khiển (như Arduino, Microbit,...) qua giao tiếp I2C.
+Mạch chuyển giao tiếp UART TTL to RS485 V2 được thiết kế với khả năng chống nhiễu cao, tích hợp các bộ đệm, chuyển mức logic 5V-3V3, Cầu chì tự phục hồi, Diod chống nhiễu giúp hệ thống chạy ổn định, an toàn hơn và không làm cháy board điều khiển trung tâm. Phần chân giao tiếp RS485 trên mạch có chân Mass, nếu hệ thống có đường đây mass tiếp đất thì có thể sử dụng để nối vào chân Mass này giúp tăng khả năng chống nhiễu và chống  sét.
 
-MKE-M16 Blynk Gate Wifi IoT Module thuộc hệ sinh thái phần cứng Robotics MakerEdu nên có thể sử dụng trực tiếp an toàn với các mạch điều khiển trung tâm ở cả hai mức điện áp 3.3VDC và 5VDC như: Arduino, Raspberry Pi, Jetson Nano, Micro:bit,....với chuẩn kết nối Connector XH2.54 thông dụng.
+Mạch hỗ trợ kết nối nhiều điểm RS485 trên đường Bus, mạch được thiết kế để các điểm có thể nối "nóng" mà không sợ hiện tượng module bị chết khi chưa ngắt đường truyền tổng.
 
 ## Thông số kỹ thuật
 
-- Model: MKE-M16 Blynk Gate Wifi IoT Module
-- Tương thích với nền tảng Blynk.
-- IC chính: ESP8266
-- Sử dụng chuẩn Wifi băng tần: 2.4Ghz
-- Điện áp hoạt động: 5VDC
-- Dòng điện tiêu thụ khi hoạt động: khoảng 300mA
-- Chuẩn giao tiếp: I2C / GPIO
-- Điện áp giao tiếp: TTL 3.3VDC / 5VDC
-- Sử dụng trực tiếp an toàn với các board mạch giao tiếp ở cả hai mức điện áp 3.3VDC và 5VDC như: Arduino, Raspberry Pi, Jetson Nano, Micro:bit,....
-- Bổ sung thêm các thiết kế ổn định, chống nhiễu.
-- Chuẩn kết nối: connector XH2.54 4Pins
-- Thuộc hệ sinh thái phần cứng Robotics MakerEdu, tương thích tốt nhất khi sử dụng với các mạch điều khiển trung tâm của MakerEdu và MakerEdu Shield.
+- Điện áp hoạt động: 3 - 5VDC.
+- Điện áp giao tiếp TTL: 3 - 5VDC.
+- Khoảng cách truyền RS485 có thể lên đến 1.2km (khuyến nghị sử dụng dưới 800m và dây bus chuyên dụng cho RS485).
+- Chuẩn chân cắm: TTL 2.54mm, RS485 Domino 5.08mm
+- Có đèn led thông báo trạng thái truyền nhận RX và TX.
 
 ## Hình ảnh sản phẩm
 
-![MKE_M16_Blynk_Gate](/image/blynkgate1.png)
-
-![MKE_M16_Blynk_Gate](/image/blynkgate2.png)
+![](/image/01_z6161363600645_826b10180d7e5e907609d3ebd44f8fb1.jpg)  
+Mặt trước
+![](/image/02_z6161364849347_18d98a1dadfcc866e54c6302dd85e497.jpg)  
+Mặt sau
 
 ## Kích thước sản phẩm
 
-![MKE_M16](/image/blynkgate4.jpg)
+![](/image/dimension.png)
 
 ## Các chân tín hiệu
 
-- GND:	Chân cấp nguồn âm 0VDC
-- 5V:	Chân cấp nguồn dương 5VDC
-- SDA: Chân I2C Data
-- SCL: Chân I2C Clock
+<table><thead>
+  <tr>
+    <th>Chân</th>
+    <th>Mô Tả</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>GND</td>
+    <td>Chân nguồn GND (0V) của mạch</td>
+  </tr>
+  <tr>
+    <td>5V</td>
+    <td>Chân nguồn 5V của mạch</td>
+  </tr>
+  <tr>
+    <td>TX</td>
+    <td>Chân nhận tín hiệu truyền đi từ MCU</td>
+  </tr>
+  <tr>
+    <td>RX</td>
+    <td>Chân gửi tín hiệu nhận về đến MCU</td>
+  </tr>
+</tbody>
+</table>
 
 ## Hướng dẫn sử dụng
 
-### Hướng dẫn sử dụng các chức năng cơ bản của Blynk với Module Blynk Gate:
-[![MKE_M16_Blynk_Gate](/image/blynkgate5.png)](https://www.youtube.com/watch?v=1ZWTLyLpl9U)
+![](/image/ttl-rs4851.jpeg)
 
-### Chế độ độc lập với GPIO tích hợp trên mạch:
-[![MKE_M16_Blynk_Gate](/image/blynkgate6.png)](https://www.youtube.com/watch?v=93c_VTHQBjQ)
-
-### Chế độ kết hợp với Arduino qua giao tiếp I2C:
-[![MKE_M16_Blynk_Gate](/image/blynkgate7.png)](https://www.youtube.com/watch?v=4Q3aEIDNlz0)
-
-## Hỗ trợ và liên hệ:
+## Hỗ trợ và liên hệ
 
 - Website: [https://www.makerlab.vn/](https://www.makerlab.vn/)
 - Facebook: [https://www.facebook.com/makerlabvn](https://www.facebook.com/makerlabvn)
