@@ -61,7 +61,7 @@ Mặt sau
   </tr>
   <tr>
     <td>GROUND</td>
-    <td>Nối đất chống nhiểu</td>
+    <td>Nối đất chống nhiễu</td>
   </tr>
 </tbody>
 </table>
