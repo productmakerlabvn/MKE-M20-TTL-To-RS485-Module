@@ -53,15 +53,15 @@ Mặt sau
   </tr>
   <tr>
     <td>A</td>
-    <td>Chân tín hiệu dương theo chuẩn RS485</td>
+    <td>Chân A theo chuẩn RS485</td>
   </tr>
   <tr>
     <td>B</td>
-    <td>Chân tín hiệu âm theo chuẩn RS485</td>
+    <td>Chân B theo chuẩn RS485</td>
   </tr>
   <tr>
-    <td>GROUND</td>
-    <td>Nối đất chống nhiễu</td>
+    <td>PE</td>
+    <td>Nối đất chống sét</td>
   </tr>
 </tbody>
 </table>
