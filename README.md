@@ -10,7 +10,7 @@ Mạch hỗ trợ kết nối nhiều điểm RS485 trên đường Bus, mạch 
 
 ## Tính năng
 
-- Giao tiếp TTL 3.3VDC/5VDC.
+- Tích hợp IC chuyển mức logic TTL 3.3-5VDC.
 - Chống sét, bảo vệ quá áp GDT.
 - Cầu chì tự phục hồi bảo vệ quá dòng.
 - Bảo vệ chống xung điện áp (tĩnh điện) TVS.
