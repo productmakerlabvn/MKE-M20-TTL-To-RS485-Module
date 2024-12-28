@@ -45,18 +45,30 @@ Mặt sau
   </tr>
   <tr>
     <td>TX</td>
-    <td>Chân nhận tín hiệu truyền đi từ MCU</td>
+    <td>Chân truyền tín hiệu tới chân RX của MCU</td>
   </tr>
   <tr>
     <td>RX</td>
-    <td>Chân gửi tín hiệu nhận về đến MCU</td>
+    <td>Chân nhận tín hiệu được truyền từ chân TX của MCU</td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Chân A theo chuẩn RS485</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Chân B theo chuẩn RS485</td>
+  </tr>
+  <tr>
+    <td>PE</td>
+    <td>Nối đất chống sét</td>
   </tr>
 </tbody>
 </table>
 
 ## Hướng dẫn sử dụng
 
-![](/image/ttl-rs4851.jpeg)
+![](/image/RS485toTTL.png)
 
 ## Hỗ trợ và liên hệ
 
