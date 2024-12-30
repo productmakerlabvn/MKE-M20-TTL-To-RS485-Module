@@ -3,9 +3,7 @@
 
 ## Giới thiệu
 
-Mạch chuyển giao tiếp MKE-M20 TTL to RS485 được thiết kế để có thể giúp bạn chuyển giao tiếp từ chuẩn giao tiếp UART TTL (Vi điều khiển, máy tính nhúng,...) sang chuẩn giao tiếp RS485 và ngược lại.
-
-Mạch chuyển giao tiếp UART TTL to RS485 V2 được thiết kế với khả năng chống nhiễu cao, tích hợp các bộ đệm, chuyển mức logic 5V-3V3, Cầu chì tự phục hồi, Diod chống nhiễu giúp hệ thống chạy ổn định, an toàn hơn và không làm cháy board điều khiển trung tâm. Phần chân giao tiếp RS485 trên mạch có chân Mass, nếu hệ thống có đường đây mass tiếp đất thì có thể sử dụng để nối vào chân Mass này giúp tăng khả năng chống nhiễu và chống sét.
+Mạch chuyển giao tiếp MKE-M20 TTL to RS485 được thiết kế để có thể giúp bạn chuyển giao tiếp từ chuẩn giao tiếp UART TTL (Vi điều khiển, máy tính nhúng,...) sang chuẩn giao tiếp RS485 và ngược lại. Với khả năng chống nhiễu cao, tích hợp các bộ đệm, chuyển mức logic 5V-3V3, Cầu chì tự phục hồi, Diod chống nhiễu giúp hệ thống chạy ổn định, an toàn hơn và không làm cháy board điều khiển trung tâm. Phần chân giao tiếp RS485 trên mạch có chân Mass, nếu hệ thống có đường đây mass tiếp đất thì có thể sử dụng để nối vào chân Mass này giúp tăng khả năng chống nhiễu và chống sét.
 
 Mạch hỗ trợ kết nối nhiều điểm RS485 trên đường Bus, mạch được thiết kế để các điểm có thể nối "nóng" mà không sợ hiện tượng module bị chết khi chưa ngắt đường truyền tổng.
 
