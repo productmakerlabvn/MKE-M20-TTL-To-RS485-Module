@@ -38,8 +38,8 @@ Ngoài ra mạch còn tích hợp chuyển mức logic nên có thể giao tiế
 
 ## Thông số kỹ thuật
 
-- Điện áp hoạt động: 3 - 5VDC.
-- Điện áp giao tiếp TTL: 3 - 5VDC.
+- Điện áp hoạt động: 3V3 - 5VDC.
+- Điện áp giao tiếp TTL: 3V3 - 5VDC.
 - Khoảng cách truyền RS485 có thể lên đến 1.2km (khuyến nghị sử dụng dưới 800m và dây bus chuyên dụng cho RS485).
 - Chuẩn chân cắm: TTL 2.54mm, RS485 Domino 5.08mm
 - Có đèn led thông báo trạng thái truyền nhận RX và TX.
@@ -60,7 +60,7 @@ Mặt sau
 | Chân | Mô Tả |
 |------|-------|
 | GND  | Chân nguồn GND (0V) của mạch |
-| 5V   | Chân nguồn 5V của mạch |
+| 5V   | Chân nguồn 5V của mạch  |
 | TX   | Chân truyền tín hiệu tới chân RX của MCU |
 | RX   | Chân nhận tín hiệu được truyền từ chân TX của MCU |
 | A    | Chân A theo chuẩn RS485 |
